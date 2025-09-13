@@ -134,18 +134,8 @@
 
   <script>
     function openGame(url){
-      var win = window.open();
-      if (url) {
-        var iframe = document.createElement("iframe");
-        iframe.style.border = "none";
-        iframe.style.width = "100%";
-        iframe.style.height = "100%";
-        iframe.src = url;
-        win.document.body.style.margin = "0";
-        win.document.body.style.height = "100vh";
-        win.document.body.appendChild(iframe);
-      }
-    }  
+      window.open(url, "_blank");
+    }
   </script>
 </body>
 </html>
