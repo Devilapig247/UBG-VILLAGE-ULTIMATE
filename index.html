@@ -10,8 +10,8 @@
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
+      background: linear-gradient(135deg, #0a2540, #1b4f72, #21618c);
+      background-attachment: fixed;
       color: #fff;
       display: flex;
       flex-direction: column;
@@ -20,13 +20,13 @@
 
     .container {
       flex: 1;
-      max-width: 1400px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 40px 20px;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 30, 60, 0.6);
       border-radius: 20px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 30px rgba(0,0,50,0.6);
     }
 
     h1, h2, h3, p {
@@ -37,26 +37,28 @@
     h1 {
       font-size: 2.5rem;
       font-weight: 700;
+      color: #66ccff;
+      text-shadow: 0 0 10px rgba(0,150,255,0.8);
     }
 
     h3 {
       font-weight: 400;
-      color: #ccc;
+      color: #a0cce0;
     }
 
     .game-buttons {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(3, 1fr); /* always 3 columns */
+      gap: 25px;
       margin-top: 40px;
     }
 
     .game-buttons button {
-      background: rgba(255,255,255,0.1);
-      border: none;
+      background: rgba(0, 80, 150, 0.2);
+      border: 2px solid rgba(0,150,255,0.4);
       border-radius: 15px;
       padding: 20px;
-      color: #fff;
+      color: #e0f7ff;
       font-size: 15px;
       cursor: pointer;
       display: flex;
@@ -65,13 +67,14 @@
       justify-content: center;
       text-align: center;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 15px rgba(0,0,50,0.4);
     }
 
     .game-buttons button:hover {
       transform: translateY(-6px);
-      background: rgba(255,255,255,0.2);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+      background: rgba(0,120,255,0.3);
+      border-color: #66ccff;
+      box-shadow: 0 8px 25px rgba(0,0,80,0.6);
     }
 
     .game-buttons button img {
@@ -79,14 +82,15 @@
       height: 96px;
       margin-bottom: 12px;
       border-radius: 12px;
+      border: 2px solid rgba(100,180,255,0.5);
     }
 
     footer {
       text-align: center;
       padding: 20px;
       font-size: 14px;
-      color: #bbb;
-      background: rgba(0,0,0,0.6);
+      color: #a0cce0;
+      background: rgba(0,0,40,0.7);
       backdrop-filter: blur(6px);
       margin-top: auto;
     }
