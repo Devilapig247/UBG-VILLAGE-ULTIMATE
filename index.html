@@ -10,8 +10,7 @@
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #0a2540, #1b4f72, #21618c);
-      background-attachment: fixed;
+      background: #000401;
       color: #fff;
       display: flex;
       flex-direction: column;
@@ -23,10 +22,8 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 40px 20px;
-      background: rgba(0, 30, 60, 0.6);
-      border-radius: 20px;
-      backdrop-filter: blur(12px);
-      box-shadow: 0 8px 30px rgba(0,0,50,0.6);
+      background: #000401;
+      border-radius: 10px;
       position: relative;
     }
 
@@ -37,9 +34,7 @@
 
     h1 {
       font-size: 2.5rem;
-      font-weight: 700;
       color: #66ccff;
-      text-shadow: 0 0 10px rgba(0,150,255,0.8);
     }
 
     h3 {
@@ -90,31 +85,14 @@
       position: absolute;
       top: 20px;
       right: 20px;
-      background: rgba(0, 80, 150, 0.2);
+      background: rgba(0, 0, 10, 0.2);
       border: 2px solid rgba(0,150,255,0.4);
-      border-radius: 12px;
-      padding: 12px 20px;
+      border-radius: 5px;
+      padding: 12px 10px;
       color: #e0f7ff;
       font-size: 14px;
       cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(0,0,50,0.4);
-    }
 
-    .feedback-button:hover {
-      background: rgba(0,120,255,0.3);
-      border-color: #66ccff;
-      box-shadow: 0 8px 25px rgba(0,0,80,0.6);
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #a0cce0;
-      background: rgba(0,0,40,0.7);
-      backdrop-filter: blur(6px);
-      margin-top: auto;
     }
   </style>
 </head>
@@ -123,9 +101,8 @@
     <h1>Games</h1>
     <p>Some of the games may take a while to load.</p>
 
-    <!-- Feedback button -->
     <button class="feedback-button" onclick="openGame('https://docs.google.com/forms/d/e/1FAIpQLSfjgcg5KoxjY-QtmheZzsVoapRdigJrCCCxakkH-XzquIbReA/viewform?embedded=true')">
-      Feedback
+      Suggest Game
     </button>
 
     <div class="game-buttons">
